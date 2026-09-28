@@ -1,5 +1,25 @@
 # Student Lab — GitHub Repository Workflow
 
+## Running the app
+
+Pull and run the published image (no need to clone this repo):
+
+```
+docker pull ghcr.io/betoinn/platform-demo:latest
+docker run -d -p 8080:8080 ghcr.io/betoinn/platform-demo:latest
+```
+
+Then check `http://localhost:8080`.
+
+To build and run from source instead:
+
+```
+git clone https://github.com/Betoinn/platform-demo.git
+cd platform-demo
+docker build -t platform-demo .
+docker run -d -p 8080:8080 platform-demo
+```
+
 ## Goal
 Work as a team of 3–4. Improve the development workflow around this small Node.js service.
 
